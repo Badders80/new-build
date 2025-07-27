@@ -9,7 +9,6 @@ if (!clientId || clientId === 'your_client_id_here') {
 
 export const futureverseAuthClient = new FutureverseAuthClient({
   clientId: clientId,
-  environment: 'staging',
   redirectUri: 'http://localhost:3000/',
   postLogoutRedirectUri: 'http://localhost:3000/',
 });

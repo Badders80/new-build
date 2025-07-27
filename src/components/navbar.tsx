@@ -51,8 +51,8 @@ export default function Navbar() {
         return;
       }
       
-      // Use authFlow like the working Proof-2 demo
-      await signIn({ authFlow: 'redirect' });
+      // Use type: redirect for Next.js with SDK v5.0.0
+      await signIn({ type: 'redirect' });
     } catch (error) {
       console.error('Sign in error:', error);
       alert('Authentication failed. Please check your configuration and try again.');
